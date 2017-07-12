@@ -16,7 +16,7 @@
     "algorithm",
     "argon2"
   ],
-  "author": "Petrofeed Inc",
+  "author": "Olivier Wietrich, Petrofeed Inc",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tether/tether-password/issues"
