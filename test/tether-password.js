@@ -19,3 +19,9 @@ test('should not be blank', assert => {
   const hash = password('hello world')
   assert.notEqual(hash, alloc(hash.length), 'not blank')
 })
+
+test('should compare with hashed password', assert => {
+  assert.plan(1)
+  const stored = password('hello world')
+  assert.equal(password('hello world', stored), true)
+})
