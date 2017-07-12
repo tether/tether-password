@@ -23,5 +23,5 @@ test('should not be blank', assert => {
 test('should compare with hashed password', assert => {
   assert.plan(1)
   const stored = password('hello world')
-  assert.equal(password('hello world', stored), true)
+  assert.equal(password('hello world', stored), stored)
 })
