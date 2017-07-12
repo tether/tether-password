@@ -4,10 +4,10 @@
  */
 
 const test = require('tape')
+const password = require('..')
 
-test('this is an example', assert => {
+
+test('should generate buffer from string password', assert => {
   assert.plan(1)
-  assert.equal(1 + 2, 3)
+  assert.equal(password('hello world') instanceof Buffer, true)
 })
-
-  

@@ -1,4 +1,3 @@
-
 {
   "name": "tether-password",
   "version": "1.0.0",
@@ -22,6 +21,9 @@
   "homepage": "https://github.com/tether/tether-password#readme",
   "devDependencies": {
     "tape": "*"
+  },
+  "dependencies": {
+    "buffer-alloc": "^1.1.0",
+    "sodium-universal": "^1.4.0"
   }
 }
-  
