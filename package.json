@@ -1,7 +1,7 @@
 {
   "name": "tether-password",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hash and verify passwords using Argon2 algorithm",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js"
@@ -11,7 +11,10 @@
     "url": "git+https://github.com/tether/tether-password.git"
   },
   "keywords": [
-    "tether"
+    "password",
+    "hash",
+    "algorithm",
+    "argon2"
   ],
   "author": "Petrofeed Inc",
   "license": "MIT",
