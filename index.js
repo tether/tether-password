@@ -7,8 +7,12 @@ const alloc = require('buffer-alloc')
 
 
 /**
- * This is a simple description.
+ * Hash password or verify password against a buffer encoded
+ * with argon2 algorithm.
  *
+ * @param {String} password (password to hash or to verify)
+ * @param {Buffer?} stored
+ * @return {Buffer} (or null othwise)
  * @api public
  */
 
