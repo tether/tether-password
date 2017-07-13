@@ -5,7 +5,9 @@
 [![Downloads](https://img.shields.io/npm/dm/tether-password.svg)](http://npm-stat.com/charts.html?package=tether-password)
 [![guidelines](https://tether.github.io/contribution-guide/badge-guidelines.svg)](https://github.com/tether/contribution-guide)
 
-Hash and verify passwords using Argon2 algorithm
+Hash and verify passwords using Argon2 algorithm. This module aims at the highest memory filling rate and effective use of multiple computing units, while providing defense against tradeoff attacks.
+
+See [documentation]() for more information.
 
 ## Usage
 
