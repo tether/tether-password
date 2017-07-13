@@ -16,17 +16,18 @@ const alloc = require('buffer-alloc')
  * @api public
  */
 
-module.exports = function (pass, stored) {
-  if (stored) {
-    const bool = sodium.crypto_pwhash_str_verify(stored, new Buffer(pass))
-    return bool && stored
+module.exports = function (pass, ...args) {
+  const arg = args[0]
+  if (arg) {
+    const bool = sodium.crypto_pwhash_str_verify(arg, new Buffer(pass))
+    return bool && arg
   } else {
     var output = alloc(sodium.crypto_pwhash_STRBYTES)
     sodium.crypto_pwhash_str(
       output,
       new Buffer(pass),
-      sodium.crypto_pwhash_OPSLIMIT_INTERACTIVE,
-      sodium.crypto_pwhash_MEMLIMIT_INTERACTIVE
+      arg || sodium.crypto_pwhash_OPSLIMIT_INTERACTIVE,
+      args[1] || sodium.crypto_pwhash_MEMLIMIT_INTERACTIVE
     )
     return output
   }
