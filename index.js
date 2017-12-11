@@ -19,7 +19,10 @@ const alloc = require('buffer-alloc')
 module.exports = function (pass, ...args) {
   const arg = args[0]
   if (arg) {
-    const bool = sodium.crypto_pwhash_str_verify(arg, new Buffer(pass))
+    const bool = sodium.crypto_pwhash_str_verify(
+      alloc(sodium.crypto_pwhash_STRBYTES, arg), 
+      new Buffer(pass)
+    )
     return bool && arg
   } else {
     var output = alloc(sodium.crypto_pwhash_STRBYTES)
