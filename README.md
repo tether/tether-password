@@ -1,6 +1,6 @@
 # Tether-Password
 
-[![Build Status](https://travis-ci.org/petrofeed/tether-password.svg?branch=master)](https://travis-ci.org/petrofeed/tether-password)
+[![Build Status](https://travis-ci.org/tether/tether-password.svg?branch=master)](https://travis-ci.org/tether/tether-password)
 [![NPM](https://img.shields.io/npm/v/tether-password.svg)](https://www.npmjs.com/package/tether-password)
 [![Downloads](https://img.shields.io/npm/dm/tether-password.svg)](http://npm-stat.com/charts.html?package=tether-password)
 [![guidelines](https://tether.github.io/contribution-guide/badge-guidelines.svg)](https://github.com/tether/contribution-guide)
